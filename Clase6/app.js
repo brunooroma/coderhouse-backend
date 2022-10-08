@@ -17,6 +17,11 @@ app.get('/productos', async (req, res) => {
 
 app.get('/productos/:id', async (req, res) => {
     const id = req.params.id
-    const producto= await productosArchivo.getById(id)
+    const producto = await productosArchivo.getById(id)
     res.send(producto);
+})
+
+app.get('/productoRandom', async (req, res) => {
+
+    res.send(await productosArchivo.getRandom())
 })

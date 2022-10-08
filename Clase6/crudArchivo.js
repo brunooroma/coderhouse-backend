@@ -25,6 +25,16 @@ class CRUD {
         }
     }
 
+    async getRandom() {
+        try {
+            const elements = await this.getAll();
+            const foundElement = elements[Math.floor(Math.random() * elements.length)]
+            return foundElement;
+        }
+
+        catch (error) { console.log(error); }
+    }
+
     readData(path) {
         const data = JSON.parse(fs.readFileSync(path, 'utf-8'));
         return data;
