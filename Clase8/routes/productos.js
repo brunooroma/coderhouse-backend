@@ -26,8 +26,8 @@ router.post('/productos', async (req, res) => {
 
 router.put('/productos/:id', async (req,res) => {
     const { id } = req.params;
-    const { title, description } = req.body;
-    await productosArchivo.modify(id,{title,description})
+    const { title, price } = req.body;
+    await productosArchivo.modify(id,{title,price})
     res.redirect("/api/productos");
   } 
 )
