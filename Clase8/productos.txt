@@ -9,7 +9,6 @@
     "title": "Ventana",
     "price": 1000,
     "img": "a",
-    "description": "ahsdasd",
     "id": "3"
   },
   {
@@ -17,5 +16,11 @@
     "price": 800,
     "img": "",
     "id": "1666050623825"
+  },
+  {
+    "title": "Auto",
+    "price": "150000",
+    "img": "adas",
+    "id": "1666053137197"
   }
 ]
