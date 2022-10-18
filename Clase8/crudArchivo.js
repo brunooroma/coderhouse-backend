@@ -12,6 +12,7 @@ class CRUD {
 
   async create(obj) {
     try {
+      console.log(obj)
       const readFile = await this.getAll();
       obj.id = this.generateId();
       readFile.push(obj);
@@ -39,6 +40,7 @@ class CRUD {
       return obj ? obj : null;
     } catch (err) {
       console.log(err);
+      return null;
     }
   }
 
@@ -49,12 +51,12 @@ class CRUD {
       const obj = elementos.find((el) => el.id == id);
       if (!obj) {
         console.log("no existe el id " + id);
+        return false
       } else {
         const elementosModificados = elementos.map((item) => {
           if (item.id == id) return objMod;
           return item;
         });
-
         this.writeData(elementosModificados);
         return objMod;
       }
@@ -66,9 +68,11 @@ class CRUD {
 
   async delete(id) {
     try {
+      console.log(id)
       const objects = await this.getAll();
       const filterObjects = objects.filter((e) => e.id != id);
       this.writeData(filterObjects);
+      return 
     } catch (err) {
       throw new Error(err);
     }
