@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Canilleras",
+    "price": 20,
+    "img": "",
+    "id": "1"
+  },
+  {
+    "title": "Ventana",
+    "price": 1000,
+    "img": "a",
+    "id": "3"
+  },
+  {
+    "title": "Casco",
+    "price": 800,
+    "img": "",
+    "id": "1666050623825"
+  },
+  {
+    "title": "Auto",
+    "price": "150000",
+    "img": "adas",
+    "id": "1666053137197"
+  },
+  {
+    "title": "Auto",
+    "price": "5000",
+    "img": "sadasd",
+    "id": "1666135074858"
+  },
+  {
+    "title": "asd",
+    "price": "wad",
+    "img": "wad",
+    "id": "1666136514525"
+  },
+  {
+    "title": "wad",
+    "price": "awd",
+    "img": "awdawdad",
+    "id": "1666136528099"
+  },
+  {
+    "title": "awdawdaw",
+    "price": "awdawdawdaw",
+    "img": "awdfeasvx",
+    "id": "1666136588250"
+  },
+  {
+    "title": "23",
+    "price": "123123",
+    "img": "123123",
+    "id": "1666136617643"
+  },
+  {
+    "title": "wada",
+    "price": "awdwa",
+    "img": "awdwadawdwa",
+    "id": "1666140799219"
+  }
+]
