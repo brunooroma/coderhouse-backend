@@ -24,10 +24,6 @@ app.get('/', (req, res) => {
   res.render('index');
 })
 
-app.get('/productos', (req, res) => {
-  res.render('table');
-})
-
 const server = app.listen(process.env.PORT || PORT, () =>
   console.log(`Server listening on PORT ${PORT}`)
 );

@@ -4,8 +4,8 @@ const router = express.Router();
 const productosArchivo = new CRUD("productos.txt");
 
 router.get('/productos', async (req, res) => {
-    const mostrarProductos = await productosArchivo.getAll();
-    return res.json(mostrarProductos);
+    const products = await productosArchivo.getAll();
+    return res.render("table", { products: products })
 })
 
 router.get("/productos/:id", async (req, res) => {

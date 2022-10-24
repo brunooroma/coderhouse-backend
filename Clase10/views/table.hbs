@@ -1,3 +1,49 @@
- <h2>Productos</h2>
+<div>
 
-<button><a href="/">Ir al Inicio</a></button>
+  <h1 class="title">Lista de productos:</h1>
+
+{{#if products.length}}
+
+  <table class="product-list">
+
+    <tr>
+
+      <th>Título</th>
+
+      <th>Precio</th>
+
+      <th>Miniatura</th>
+
+    </tr>
+
+    {{#each products}}
+
+    <tr>
+
+      <td>{{this.title}}</td>
+
+      <td>{{this.price}}</td>
+
+      <td><img height="72px" width="72px" src={{this.thumbnail}} /></td>
+
+    </tr>
+
+    {{/each}}
+
+     
+
+  </table>
+
+{{else}}
+
+<h1>No se encontraron productos</h1>
+
+{{/if}}
+
+
+
+  <a href="/"><button>Volver al formulario de carga</button></a>
+
+
+
+</div>
